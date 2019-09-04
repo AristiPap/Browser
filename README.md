@@ -1,7 +1,7 @@
 # Browser
 The following project is a representation of an actual browser.Basically the structure of the browser (tabs,sites,how they are created/accessed/deleted) is an implementation of doubly-linked-lists and circular-doubly-linked-lists.The various features of this project are :
 
->>SessionNew=Creates a session on the browser(the user can open upto 2 sessions that control different tabs).Creates the InfoSession informational node, the first node in the Tab list, and the first site under TabNode.  Initializes the members of the InfoSession,the Tab node and Site node. 
+>SessionNew=Creates a session on the browser(the user can open upto 2 sessions that control different tabs).Creates the InfoSession informational node, the first node in the Tab list, and the first site under TabNode.  Initializes the members of the InfoSession,the Tab node and Site node.\ 
 >>SessionNewTab=Opens a new tab at the end of the circular doubly linked list and creates the first site under the tab(The tabs are created with the form of a doubly linked list).(every site opens with the default opening address).
 >>SessionTabShow/SessionSiteShow= Print the address of the current site of the currebt tab.
 >>SessionTabClose= Deletes the current tab and changes the pointers of the current tab,previous and next tab.
