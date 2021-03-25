@@ -57,7 +57,6 @@ void SessionNewAddress(char *StringAddress)
        }  
        else  
        {    
-          //printf("mpike\n");
           temp =(*SessionInfo)->CurrTab->FirstSite; 
           currtemp=(*SessionInfo)->CurrTab->CurrSite;
 		  del=(*SessionInfo)->CurrTab->CurrSite->NextSite; 
@@ -180,10 +179,8 @@ void SessionOpenNewTab(char *StringAddress)
    //tail's next will point to NULL, as it is the last node of the list 
 	 TabCreated->FirstSite->NextSite=NULL;
      TabCreated->CurrSite=SiteCreated;
-    //(*SessionInfo)->CurrTab->CurrSite=FirstSiteNode;
      SiteCreated->UpTab=TabCreated;
     (*SessionInfo)->CurrTab->PrevTab->AuxSite=(*SessionInfo)->CurrTab->PrevTab->CurrSite;
-	//(*SessionInfo)->CurrTab->FirstSite;
     (*SessionInfo)->AuxTab=(*SessionInfo)->CurrTab->PrevTab;
     CounterTab++;
     flagtab=1;
